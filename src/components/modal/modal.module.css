@@ -1,0 +1,89 @@
+@value fontMenu, fontLogo from '../../common/font.module.css';
+@value titleSize, Radius from '../../common/size.module.css';
+@value makerWhite,makerLightGrey,makerBrown,makerMint,makerOrange,makerGreen,makerpink,makerBlue  from '../../common/colors.module.css';
+
+.overlay {
+    position: fixed;
+    top: -100%;
+    left: -100%;
+    z-index: 100;
+    width: 200vw;
+    height: 200vh;
+    background-color: rgba(0,0,0,0.3);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s;
+}
+
+.bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3.5rem;
+    background-color: black;
+}
+
+.bar_title {
+    text-align: start;
+    margin-left: 1rem;
+    margin-top: 1.6rem;
+    color: makerWhite;
+    font-size: 1.2rem;
+}
+
+.closeButton {
+    color: makerWhite;
+    border: none;
+    background-color: transparent;
+    margin-right: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.line {
+    border-bottom: 1px solid grey;
+    width: 90%;
+    margin: auto;
+}
+
+
+.content_title {
+    font-family: 'Paytone One', sans-serif;;
+    font-size: 2rem;
+    margin-bottom: 0.8rem;
+}
+
+.modal {
+    position: fixed;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 45vw;
+    height: 50vh;
+    background-color: #fcfcfc;
+    z-index: 1000;
+    padding: 50px 50px;
+    overflow-y: scroll;
+    word-break: keep-all;
+}
+
+/*각 컨텐츠 내용*/
+.content_box {
+    text-align: start;
+    margin: auto;
+    width: 90%;
+    line-height: 1.7rem;
+    margin-top: 2rem;
+}
+
+.content_box > h2 {
+    font-weight: 800;
+    font-size: 1.6rem;
+}
+
+.point {
+    font-weight: 800;
+}

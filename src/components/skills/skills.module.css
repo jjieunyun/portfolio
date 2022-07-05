@@ -1,0 +1,241 @@
+@value fontMenu, fontLogo from '../../common/font.module.css';
+@value titleSize, Radius from '../../common/size.module.css';
+@value makerWhite,makerLightGrey,makerBrown,makerMint,makerOrange,makerGreen,makerpink,makerBlue  from '../../common/colors.module.css';
+
+.skills {
+    margin-top: -2px;
+    height: 110vh;
+}
+
+.background {
+    position: absolute;
+    z-index: -200;
+    width: 103vw;
+    height: 110vh;
+    object-fit: cover;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    position: relative;
+    top: 2.5rem;
+    padding-top: 0rem;
+    max-width: 80%;
+    margin: auto;
+}
+
+.container > h1 {
+    text-align: center;
+    padding-top: 6rem;
+    font-size: titleSize;
+    font-family: fontMenu;
+    color: makerBrown;
+    margin: 0;
+}
+
+.skillset {
+
+    background-color: makerWhite;
+    border: 2px solid makerBrown;
+    border-radius: Radius;
+    color: makerBrown;
+    margin: 20px 0;
+    height: 41rem;
+}
+
+.bar {
+    position: relative;
+    border-bottom: 2px solid makerBrown;
+    width: 100%;
+    height: 2.5rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.bar  div {
+    margin: auto;
+    margin-left: 10px;
+    margin-right: 0;
+    text-align: center;
+    width: 15px;
+    height: 15px;
+    background-color: makerBrown;
+    border: 1px solid makerBrown;
+    border-radius: 50%;
+}
+
+
+.skillset_container {
+    display: flex;
+    height: 38.3rem;
+}
+
+.skillset_title {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    font-family: fontLogo;
+}
+
+.skillset_left {
+    flex-basis: 60%;
+    
+    background-color: makerLightGrey;
+    border-radius: 0 0 0 18px;
+    padding: 1rem 1.5rem;
+}
+
+.skillset_right {
+    flex-basis: 40%;
+}
+
+
+.description {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.2rem;
+}
+
+.lang {
+    font-weight: bold;
+}
+
+.per {
+    color: rgb(129, 126, 126);
+    font-size: 0.9rem;
+}
+
+.skill {
+    margin-bottom: 2.5rem;
+}
+
+.skill_bar {
+    width: 100%;
+    height: 8px;
+    border-radius: 50px;
+    background-color: grey;
+}
+
+.skill_value {
+    width: 0%;
+    height: 8px;
+    border-radius: 50px;
+    background-color: orange;
+    left: 0;
+    top: 0;
+    visibility: hidden;
+    animation: alternate line 1.5s ease-in;
+    transition: width 1.5s ease-in;
+}
+
+
+
+.value1 {
+    width: 90%;
+}
+
+.value2 {
+    width: 90%;
+}
+
+.value3 {
+    width: 80%;
+}
+
+.value4 {
+    width: 70%;
+}
+
+.value5 {
+    width: 70%;
+}
+
+.value6{
+    width: 60%;
+}
+
+.value7{
+    width: 40%;
+}
+
+
+
+.tools, .etc {
+    padding: 0.5rem;
+}
+
+@keyframes line {
+    0% {
+        width: 0%;
+    }
+    100% {
+        
+    }
+}
+
+
+
+.tools_list img {
+    width: 70px;
+    height: 70px;
+    margin: 0.5rem;
+    cursor: pointer;
+}
+
+.tools_list img:hover {
+    opacity: 0.8;
+    transform: scale(1.2);
+    transition: all 0.3s ease-in-out;
+}
+
+/*아이콘설명*/
+
+.etc {
+    margin: auto;
+    width: 90%;
+    line-height: 1.8rem;
+    
+}
+
+.details_none_box {
+    position: relative;
+    height: 200px;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.details_question {
+    display: flex;
+    justify-content: center;
+    color: rgba(0, 30, 128, 0.53);
+    font-size: 4rem;
+    filter: drop-shadow(3px 5px 2px rgba(96, 96, 96, 0.766));
+}
+
+.details_pointer {
+    position: absolute;
+    top: -12%;
+    left: 53%;
+    font-size: 3rem;
+    color: rgb(239, 237, 237);
+    filter: drop-shadow(3px 5px 2px rgba(47, 47, 47, 0.766));
+    animation: alternate infinite click 0.4s;
+} 
+
+.details {
+    word-break:keep-all;
+}
+
+@keyframes click {
+    0% {
+        top: 20%;
+        left: 54.5%;
+    }
+    100% {
+        top: 18%;
+        left: 54%;
+    }
+}

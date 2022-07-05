@@ -1,0 +1,86 @@
+@value fontMenu, fontLogo from '../../common/font.module.css';
+@value titleSize, Radius from '../../common/size.module.css';
+@value makerWhite,makerLightGrey,makerBrown,makerMint,makerOrange,makerGreen,makerpink,makerBlue  from '../../common/colors.module.css';
+
+
+
+.work {
+    position: relative;
+    color: makerBrown;
+    text-align: center;
+    height: 110vh;
+    margin: auto;
+}
+
+.background {
+    position: absolute;
+    left: 0;
+    z-index: -200;
+    width: 103vw;
+    height: 110vh;
+    object-fit: cover;
+}
+
+
+.title {
+    font-family: fontMenu;
+    font-size: titleSize;
+    margin: 0;
+    margin-top: 4rem;
+    padding-top: 3rem;
+    text-align: center;
+}
+
+.subTitle {
+    font-family: fontLogo;
+    font-size: 1.5rem;
+    position: relative;
+    top: 130px;
+    left: -165px;
+    transform: rotate(-8deg);
+}
+
+
+
+.slider {
+    position: relative;
+    padding-top: 2rem;
+    margin: auto;
+    width: 80%;
+    opacity: 0;
+    transform: translate3d(0, 20%, 0)translate3d(0, 20%, 0)
+}
+
+
+.card {
+    position: relative;
+    max-width: 40%;
+    width: 40%;
+    height: 300px;
+    margin: auto;
+    margin-top: 3rem;
+    border: 2px solid makerBrown;
+    background-color: makerWhite;
+    border-radius: 20px;
+    color: makerBrown;
+}
+
+.bar {
+    border-bottom: 2px solid makerBrown;
+    width: auto;
+    height: 2rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.bar  div {
+    margin: auto;
+    margin-left: 10px;
+    margin-right: 0;
+    text-align: center;
+    width: 15px;
+    height: 15px;
+    background-color: makerBrown;
+    border: 1px solid makerBrown;
+    border-radius: 50%;
+}
