@@ -60,7 +60,7 @@ const About = forwardRef((props,ref) => {
                         </p>
                         <div className={styles.intro_box2}>
                             <span className={styles.point}>Consistency </span> <span className={styles.line}></span>
-                            <h3>consistency 제목 정하기</h3>
+                            <h3>ALL ROUND PLAYER</h3>
                             <p>
                                 제가 가장 자신있는 건 소통입니다. <br/>
                                 학부시절 교내,외에서 다양한 활동을 경험하고 다년간의 서비스직에 종사했기 때문에
